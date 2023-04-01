@@ -1,2 +1,2 @@
-# game_collection
-Cpp Game Collection
+# Game_collection
+Cpp Console Game Collection
