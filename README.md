@@ -1,2 +1,2 @@
-# Game_collection
-Cpp Console Game Collection
+# Snake Game
+Cpp Console Snake Game

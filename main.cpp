@@ -1,9 +1,36 @@
+#include <SFML/Graphics.hpp>
+
 #include <iostream>
 #include <conio.h>
 #include <chrono>
 #include <thread>
 
 using namespace std;
+
+void trySFML() {
+  const int WEIGHT = 500;
+  const int HEIGHT = 500;
+
+  sf::RenderWindow window(sf::VideoMode(WEIGHT, HEIGHT), "Game Of Luck");
+//  window.setVerticalSyncEnabled(true);
+//  window.setFramerateLimit(60);
+  sf::CircleShape shape(100.f);
+  shape.setFillColor(sf::Color::Green);
+
+  while (window.isOpen())
+  {
+    sf::Event event;
+    while (window.pollEvent(event))
+    {
+      if (event.type == sf::Event::Closed)
+        window.close();
+    }
+
+    window.clear();
+    window.draw(shape);
+    window.display();
+  }
+}
 
 const int WIDTH = 40;
 const int HEIGHT = 20;
@@ -189,6 +216,7 @@ void Logic() {
 }
 
 int main() {
+  trySFML();
   Setup();
 
   while (!gameOver && !gameEnd && !gameExit) {
