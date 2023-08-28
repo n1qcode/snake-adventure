@@ -17,11 +17,9 @@ void trySFML() {
   sf::CircleShape shape(100.f);
   shape.setFillColor(sf::Color::Green);
 
-  while (window.isOpen())
-  {
+  while (window.isOpen()) {
     sf::Event event;
-    while (window.pollEvent(event))
-    {
+    while (window.pollEvent(event)) {
       if (event.type == sf::Event::Closed)
         window.close();
     }
@@ -59,7 +57,9 @@ int snakeX, snakeY, fruitX, fruitY, score;
 int tailX[MAX_SNAKE_SIZE], tailY[MAX_SNAKE_SIZE];
 int tailSize;
 
-enum eDirection {STOP = 0, LEFT, RIGHT, UP, DOWN};
+enum eDirection {
+  STOP = 0, LEFT, RIGHT, UP, DOWN
+};
 eDirection dir;
 
 void Sleep() {
