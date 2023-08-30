@@ -6,6 +6,12 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(Snake_Game main.cpp
         Window.cpp
         Window.h
+        Game.cpp
+        Game.h
+        Snake.cpp
+        Snake.h
+        World.cpp
+        World.h
 )
 
 if (APPLE OR UNIX)
