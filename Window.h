@@ -17,8 +17,9 @@ public:
 
   ~Window();
 
-  void BeginDraw(); // Clear the window.
-  void EndDraw(); // Display the changes.
+  void BeginDraw();
+
+  void EndDraw();
 
   void Update();
 
@@ -27,6 +28,8 @@ public:
   bool IsFullscreen();
 
   sf::Vector2u GetWindowSize();
+
+  sf::RenderWindow *GetRenderWindow();
 
   void ToggleFullscreen();
 
