@@ -29,7 +29,7 @@ public:
 
   Direction GetDirection();
 
-  int GetSpeed();
+  float GetSpeed();
 
   sf::Vector2i GetPosition();
 
@@ -63,7 +63,7 @@ private:
   SnakeContainer m_snakeBody;
   int m_size;
   Direction m_dir;
-  int m_speed;
+  float m_speed;
   int m_lives;
   int m_score;
   bool m_lost;

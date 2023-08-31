@@ -20,8 +20,8 @@ void Snake::Reset() {
   m_snakeBody.push_back(SnakeSegment(5, 6));
   m_snakeBody.push_back(SnakeSegment(5, 5));
 
-  SetDirection(Direction::None); // Start off still;
-  m_speed = 15;
+  SetDirection(Direction::None);
+  m_speed = 10;
   m_lives = 3;
   m_score = 0;
   m_lost = false;
@@ -31,7 +31,7 @@ void Snake::SetDirection(Direction l_dir) { m_dir = l_dir; }
 
 Direction Snake::GetDirection() { return m_dir; }
 
-int Snake::GetSpeed() { return m_speed; }
+float Snake::GetSpeed() { return m_speed; }
 
 sf::Vector2i Snake::GetPosition() {
   return (!m_snakeBody.empty() ?

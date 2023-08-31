@@ -15,11 +15,15 @@ public:
 
   ~Game();
 
+  void HandleInput();
+
   void Update();
 
   void Render();
 
   Window *GetWindow();
+
+  void RestartClock();
 
 private:
   Window m_window;
@@ -28,7 +32,7 @@ private:
   Snake m_snake;
 
   sf::Clock m_clock;
-  float m_elapsed;
+  sf::Time m_elapsed;
 };
 
 
