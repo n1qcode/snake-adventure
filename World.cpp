@@ -14,7 +14,7 @@ World::World(sf::Vector2u l_windSize) {
   for (int i = 0; i < 4; ++i) {
     m_bounds[i].setFillColor(sf::Color(150, 0, 0));
 
-    if (!((i + 1)) % 2) {
+    if ((i + 1) % 2) {
       m_bounds[i].setSize(sf::Vector2f(m_windowSize.x, m_blockSize));
     } else {
       m_bounds[i].setSize(sf::Vector2f(m_blockSize, m_windowSize.y));
