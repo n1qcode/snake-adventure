@@ -1,3 +1,3 @@
-# Snake Game
+# Snake Adventure Game
 
-2D Snake Game
+2D Snake Adventure Game
