@@ -1,8 +1,4 @@
-//
-// Created by n1qcode on 28.08.23.
-//
-
-#include "Window.h"
+#include "Window.hpp"
 
 Window::Window() {
   Setup("Window",

@@ -1,8 +1,4 @@
-//
-// Created by n1qcode on 29.08.23.
-//
-
-#include "Snake.h"
+#include "Snake.hpp"
 
 Snake::Snake(int l_blockSize) {
   m_size = l_blockSize;

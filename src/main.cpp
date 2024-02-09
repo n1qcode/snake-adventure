@@ -1,9 +1,11 @@
-#include "Game.h"
+#include "Game.hpp"
 
-int main() {
+int main()
+{
   Game game;
 
-  while (!game.GetWindow()->IsDone()) {
+  while (!game.GetWindow()->IsDone())
+  {
     game.HandleInput();
     game.Update();
     game.Render();

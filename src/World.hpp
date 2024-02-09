@@ -1,14 +1,11 @@
-//
-// Created by n1qcode on 29.08.23.
-//
-
-#ifndef SNAKE_GAME_WORLD_H
-#define SNAKE_GAME_WORLD_H
+#ifndef SNAKE_GAME_WORLD_HPP
+#define SNAKE_GAME_WORLD_HPP
 
 #include <SFML/Graphics.hpp>
-#include "Snake.h"
+#include "./Snake.hpp"
 
-class World {
+class World
+{
 public:
   World(sf::Vector2u l_windSize);
 
@@ -31,5 +28,4 @@ private:
   sf::RectangleShape m_bounds[4];
 };
 
-
-#endif //SNAKE_GAME_WORLD_H
+#endif // SNAKE_GAME_WORLD_HPP

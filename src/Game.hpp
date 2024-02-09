@@ -1,15 +1,12 @@
-//
-// Created by n1qcode on 29.08.23.
-//
+#ifndef SNAKE_GAME_GAME_HPP
+#define SNAKE_GAME_GAME_HPP
 
-#ifndef SNAKE_GAME_GAME_H
-#define SNAKE_GAME_GAME_H
+#include "Window.hpp"
+#include "World.hpp"
+#include "Snake.hpp"
 
-#include "Window.h"
-#include "World.h"
-#include "Snake.h"
-
-class Game {
+class Game
+{
 public:
   Game();
 
@@ -35,5 +32,4 @@ private:
   sf::Time m_elapsed;
 };
 
-
-#endif //SNAKE_GAME_GAME_H
+#endif // SNAKE_GAME_GAME_HPP

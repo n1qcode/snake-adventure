@@ -1,9 +1,5 @@
-//
-// Created by n1qcode on 29.08.23.
-//
-
-#ifndef SNAKE_GAME_SNAKE_H
-#define SNAKE_GAME_SNAKE_H
+#ifndef SNAKE_GAME_SNAKE_HPP
+#define SNAKE_GAME_SNAKE_HPP
 
 #include <SFML/Graphics.hpp>
 
@@ -71,4 +67,4 @@ private:
 };
 
 
-#endif //SNAKE_GAME_SNAKE_H
+#endif //SNAKE_GAME_SNAKE_HPP

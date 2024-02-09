@@ -1,8 +1,4 @@
-//
-// Created by n1qcode on 29.08.23.
-//
-
-#include "World.h"
+#include "World.hpp"
 
 World::World(sf::Vector2u l_windSize) {
   m_blockSize = 16;
