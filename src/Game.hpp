@@ -1,12 +1,11 @@
 #ifndef SNAKE_GAME_GAME_HPP
 #define SNAKE_GAME_GAME_HPP
 
+#include "Snake.hpp"
 #include "Window.hpp"
 #include "World.hpp"
-#include "Snake.hpp"
 
-class Game
-{
+class Game {
 public:
   Game();
 
@@ -32,4 +31,4 @@ private:
   sf::Time m_elapsed;
 };
 
-#endif // SNAKE_GAME_GAME_HPP
+#endif  // SNAKE_GAME_GAME_HPP

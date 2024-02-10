@@ -11,9 +11,7 @@ struct SnakeSegment {
 
 using SnakeContainer = std::vector<SnakeSegment>;
 
-enum class Direction {
-  None, Up, Down, Left, Right
-};
+enum class Direction { None, Up, Down, Left, Right };
 
 class Snake {
 public:
@@ -66,5 +64,4 @@ private:
   sf::RectangleShape m_bodyRect;
 };
 
-
-#endif //SNAKE_GAME_SNAKE_HPP
+#endif  // SNAKE_GAME_SNAKE_HPP

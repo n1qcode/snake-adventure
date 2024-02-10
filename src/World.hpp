@@ -2,10 +2,10 @@
 #define SNAKE_GAME_WORLD_HPP
 
 #include <SFML/Graphics.hpp>
+
 #include "./Snake.hpp"
 
-class World
-{
+class World {
 public:
   World(sf::Vector2u l_windSize);
 
@@ -28,4 +28,4 @@ private:
   sf::RectangleShape m_bounds[4];
 };
 
-#endif // SNAKE_GAME_WORLD_HPP
+#endif  // SNAKE_GAME_WORLD_HPP
